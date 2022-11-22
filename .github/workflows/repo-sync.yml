@@ -21,6 +21,7 @@ jobs:
     #  uses: actions/checkout@v3
       run: git clone --mirror https://gitsrinuhub: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@github.com/gitsrinuhub/originalrepo.git
     - run: cd originalrepo.git
+    - run: git remote remove origin
     - run: git remote set-url --push origin https://gitsrinuhub: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@github.com/gitsrinuhub/replicarepo.git
     - run: git fetch -p origin
     - run: git push --mirror
