@@ -21,6 +21,7 @@ jobs:
     #  uses: actions/checkout@v3
       run: git clone --bare https://gitsrinuhub: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@github.com/gitsrinuhub/originalrepo.git
     - run: cd originalrepo.git
+    - run: git remote set-url --push origin https://srinivas3000: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@github.com/srinivas3000/testrepo.git
     - run: git push --mirror https://srinivas3000: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@github.com/srinivas3000/testrepo.git 
     - run: cd ..
     - run: rm -rf originalrepo.git
